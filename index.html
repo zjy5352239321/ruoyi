@@ -33,7 +33,7 @@
             <ul class="nav" id="side-menu">
             	<li>
             		<div class="user-panel">
-            			<a class="menuItem noactive" title="个人中心" th:href="@{/system/user/profile}">
+            		
             				<div class="hide" th:text="个人中心"></div>
 					        <div class="pull-left image">
 		                    	<img th:src="(${#strings.isEmpty(user.avatar)}) ? @{/img/profile.jpg} : @{${user.avatar}}" th:onerror="this.src='img/profile.jpg'" class="img-circle" alt="User Image">
